@@ -1,0 +1,17 @@
+{
+  "name": "al-nour-voyages",
+  "version": "1.0.0",
+  "description": "Site vitrine Al Nour Hajj & Omra avec espace admin et sauvegarde des demandes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.4",
+    "sqlite3": "^5.1.7"
+  }
+}
