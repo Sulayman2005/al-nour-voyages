@@ -30,7 +30,7 @@ body {
   overflow-x: hidden;
 }
 
-nav {
+header nav {
   position: fixed;
   inset: 0 0 auto 0;
   height: 76px;
@@ -654,6 +654,11 @@ footer {
 .footer-links a {
   color: rgba(255, 255, 255, 0.58);
   text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--gold-light);
+  transition: 0.25s;
 }
 
 /* ADMIN GATE */
