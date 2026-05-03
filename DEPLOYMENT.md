@@ -32,11 +32,12 @@
 ## HTTPS
 Render active automatiquement HTTPS avec Let's Encrypt.
 
-## Attention SQLite sur Render
-- Render utilise un système de fichiers éphémère sur le plan gratuit.
-- `data/messages.db` peut être perdu ou réinitialisé à chaque déploiement ou redémarrage.
-- Pour un premier test, SQLite peut fonctionner.
-- Pour un vrai projet client, migre vers PostgreSQL / Supabase.
+## PostgreSQL / Supabase sur Render
+- Le projet peut maintenant se connecter à PostgreSQL si tu fournis `DATABASE_URL`.
+- Sur Render, ne stocke pas les données uniquement dans `data/messages.db`.
+- Si `DATABASE_URL` est défini, le serveur utilisera PostgreSQL au lieu de SQLite.
+- Pour Supabase, tu dois fournir l’URL de connexion et éventuellement `DB_SSL=true`.
+- En local, si `DATABASE_URL` n’est pas défini, le serveur continue de fonctionner avec SQLite.
 
 ## Test
 Une fois déployé, teste :

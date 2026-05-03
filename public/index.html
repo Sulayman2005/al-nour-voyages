@@ -3,18 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Al Nour — Voyages Hajj & Omra</title>
-
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Al Nour Hajj & Omra" />
+  <title>Al Nour — Hajj & Omra depuis la France</title>
+  <meta name="description" content="Agence de voyages spécialisée Hajj et Omra. Formules Omra, Hajj, Ramadan, accompagnement francophone et devis personnalisé." />
+  <meta name="keywords" content="hajj, omra, voyage hajj, voyage omra, agence hajj, agence omra, pèlerinage islam, mecque, médine" />
+  <meta property="og:title" content="Al Nour — Hajj & Omra depuis la France" />
+  <meta property="og:description" content="Agence de voyages spécialisée Hajj et Omra. Formules Omra, Hajj, Ramadan, accompagnement francophone et devis personnalisé." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Al Nour Hajj & Omra",
+    "url": "https://alnour-hajj.org",
+    "description": "Agence de voyages spécialisée Hajj et Omra avec accompagnement francophone et devis personnalisé.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Paris",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
 </head>
 
 <body>
-  <nav>
-    <div class="nav-logo">
+  <a class="skip-link" href="#main">Accéder au contenu</a>
+  <header>
+    <nav aria-label="Navigation principale">
+      <div class="nav-logo">
       <div class="nav-logo-icon">☽</div>
       <div class="nav-logo-text">
         <span class="nav-logo-ar">النور للحج والعمرة</span>
@@ -30,11 +53,13 @@
       <a href="#contact" class="nav-cta">Réserver</a>
     </div>
   </nav>
+  </header>
 
-  <section id="hero">
-    <div class="hero-overlay"></div>
+  <main id="main">
+    <section id="hero">
+      <div class="hero-overlay"></div>
 
-    <div class="hero-content">
+      <div class="hero-content">
       <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
       <div class="hero-tag">Hajj & Omra · Accompagnement premium</div>
 
@@ -51,7 +76,7 @@
       </div>
     </div>
 
-    <div class="hero-features">
+    <aside class="hero-features" aria-label="Chiffres clés">
       <div>
         <strong>+3500</strong>
         <span>Pèlerins accompagnés</span>
@@ -64,7 +89,7 @@
         <strong>98%</strong>
         <span>Satisfaction client</span>
       </div>
-    </div>
+    </aside>
   </section>
 
   <div class="stats-band">
@@ -193,26 +218,26 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" aria-labelledby="contact-heading">
     <div class="section-header reveal">
       <span class="section-tag">Contactez-nous</span>
-      <h2>Commencez votre <em>voyage</em></h2>
+      <h2 id="contact-heading">Commencez votre <em>voyage</em></h2>
     </div>
 
     <div class="contact-wrap">
-      <div class="contact-info reveal">
+      <aside class="contact-info reveal" aria-label="Informations de contact">
         <h3>Nous sommes là pour vous</h3>
         <p>Contactez-nous pour recevoir une proposition adaptée à votre budget et vos besoins.</p>
 
-        <div class="contact-items">
+        <address class="contact-items">
           <div class="contact-item"><div class="contact-icon">✉</div><div><span>Email</span><strong>contact@alnour-hajj.org</strong></div></div>
           <div class="contact-item"><div class="contact-icon">☎</div><div><span>Téléphone</span><strong>+33 6 12 34 56 78</strong></div></div>
           <div class="contact-item"><div class="contact-icon">📍</div><div><span>Adresse</span><strong>Paris, France</strong></div></div>
-        </div>
-      </div>
+        </address>
+      </aside>
 
       <div class="reveal">
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" aria-label="Formulaire de contact">
           <div class="form-row">
             <input class="form-input" type="text" id="f-prenom" placeholder="Prénom" />
             <input class="form-input" type="text" id="f-nom" placeholder="Nom" />
@@ -243,6 +268,8 @@
     </div>
   </section>
 
+  </main>
+
   <footer>
     <div class="footer-inner">
       <div class="nav-logo">
@@ -253,12 +280,12 @@
         </div>
       </div>
 
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Liens de pied de page">
         <a href="#packages">Formules</a>
         <a href="#pourquoi">À propos</a>
         <a href="#contact">Contact</a>
         <a href="#" id="adminLink">Admin</a>
-      </div>
+      </nav>
     </div>
   </footer>
 
@@ -284,7 +311,7 @@
         <button class="admin-nav-item" data-section="messages">Messages <span id="new-count">0</span></button>
       </aside>
 
-      <main class="admin-main">
+      <div class="admin-main">
         <section class="admin-sec active" id="sec-dashboard">
           <h2>Tableau de bord</h2>
           <p>Nouveaux messages : <strong id="db-msg">0</strong></p>
@@ -308,7 +335,7 @@
             <button id="sendReplyBtn">Envoyer la réponse</button>
           </div>
         </section>
-      </main>
+      </div>
     </div>
   </div>
 

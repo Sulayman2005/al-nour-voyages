@@ -111,4 +111,4 @@ Ensuite :
 - Déployer le projet sur un hébergeur Node.js (voir DEPLOYMENT.md).
 - Remplacer les textes fictifs, prix et coordonnées (coordonnées mises à jour).
 - Configurer les variables SMTP réelles avec Brevo (identifiants SMTP dans .env).
-- Prévoir une migration de SQLite vers PostgreSQL/Supabase pour la production.
+- Le projet supporte maintenant PostgreSQL via la variable `DATABASE_URL`. Si elle est définie, le serveur utilise PostgreSQL. Sinon le fallback SQLite local reste activé.
